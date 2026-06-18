@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Button from "$lib/components/shared/Button.svelte";
+    import { Button } from "$lib/components";
     import { SunIcon } from "$lib/icons";
 </script>
 
@@ -7,8 +7,8 @@
     <title>Playground</title>
 </svelte:head>
 
-<main class="w-auto h-screen flex flex-col items-center justify-start gap-4 mx-6 pt-24">
-    <div class="flex flex-col gap-2">
+<main class="w-auto h-screen flex flex-col items-center justify-start gap-4 pt-20">
+    <div class="flex flex-col gap-2 container-layout px-6">
         <h1 class="text-2xl font-bold">Buttons</h1>
         <div class="flex flex-col gap-2">
             <h2 class="text-xl font-bold">small</h2>

@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "process": "Processos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou a Mariana",
+    "role": "Desenvolvedor Frontend",
+    "cta": "Veja meu trabalho"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Um desenvolvedor apaixonado por construir coisas para a web."
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "email": "Enviar email"
+  }
+}

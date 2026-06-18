@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "process": "Process",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Mariana",
+    "role": "Frontend Developer",
+    "cta": "See my work"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "A passionate developer building things for the web."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "email": "Send email"
+  }
+}

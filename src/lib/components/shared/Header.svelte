@@ -23,9 +23,9 @@
     }
 </script>
 
-<header class="flex items-center justify-center fixed top-0 left-0 w-full h-16 z-50 backdrop-blur-md bg-background border-b border-border">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container-layout px-6">
-        <a href="/" class="flex items-center gap-2">
+<header class="flex items-center justify-center sticky top-0 left-0 w-full h-16 z-50 backdrop-blur-md bg-background border-b border-border">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container-layout px-3">
+        <a href="/" class="flex items-center gap-2 ">
             <span class="font-display font-black text-2xl tracking-[0.15em]">noguti</span>
             <span class="w-1.5 h-1.5 bg-primary rounded-sm"></span>
         </a>

@@ -18,8 +18,9 @@
                 sm: "h-9 rounded-md px-3 gap-1.5 has-[data-icon=inline-end]:pr-1 has-[data-icon=inline-start]:pl-1",
                 default: "h-10 px-3 py-3 gap-1.5 has-[data-icon=inline-end]:pr-2 has-[data-icon=inline-start]:pl-2",
                 lg: "h-11 rounded-md px-4 gap-2 text-md",
-                icon: "w-12 h-12",
-                "icon-sm": "w-10 h-10",
+                icon: "w-10 h-10",
+                "icon-sm": "w-9 h-9",
+                "icon-lg": "w-11 h-11",
             }
         },
         defaultVariants: {

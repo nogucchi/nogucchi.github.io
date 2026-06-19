@@ -11,5 +11,9 @@
 </svelte:head>
 
 <ModeWatcher />
-<Header />
-{@render children()}
+
+<div class="flex flex-col w-full">
+	<Header />
+	{@render children()}
+</div>
+

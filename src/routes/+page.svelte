@@ -7,6 +7,6 @@
     <meta name="description" content="Portfólio de Noguti — UI/UX Designer e Front-End Developer. Criando experiências digitais com propósito." />
 </svelte:head>
 
-<main class="w-auto h-screen flex flex-col items-center justify-start gap-4 pt-20">
+<main class="w-full flex flex-col">
     <Hero />
 </main>

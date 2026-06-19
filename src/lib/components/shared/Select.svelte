@@ -26,7 +26,7 @@
     </Button>
 
     {#if open}
-        <div class="absolute right-0 top-full mt-1 flex flex-col rounded-lg border border-border bg-surface shadow-md overflow-hidden z-50">
+        <div class="absolute mt-1 flex flex-col rounded-lg border border-border bg-surface shadow-md overflow-hidden z-50">
             {#each options as opt}
                 <button
                     onclick={() => { onchange(opt.value); open = false; }}

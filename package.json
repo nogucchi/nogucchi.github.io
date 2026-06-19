@@ -23,6 +23,7 @@
 	},
 	"dependencies": {
 		"@iconify-svelte/lucide": "^1.0.45",
+		"@iconify-svelte/mdi": "^1.0.2",
 		"@tailwindcss/vite": "^4.3.1",
 		"mode-watcher": "^1.1.0",
 		"tailwind-merge": "^3.6.0",

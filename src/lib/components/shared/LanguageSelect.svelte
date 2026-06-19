@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { language } from '$lib/i18n/index.svelte';
-    import type { Locale } from '$lib/i18n/index.svelte';
+    import { language } from '$lib/i18n/index.svelte.js';
+    import type { Locale } from '$lib/i18n/index.svelte.js';
     import Select from '$lib/components/shared/Select.svelte';
 
     const locales = [

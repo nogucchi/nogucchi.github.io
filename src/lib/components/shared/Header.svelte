@@ -4,6 +4,7 @@
     import Button from "$lib/components/shared/Button.svelte";
     import LanguageSelect from "$lib/components/shared/LanguageSelect.svelte";
     import { MenuIcon, XIcon } from "$lib/icons/index";
+    import { onMount } from "svelte";
 
     const navItems = $derived([
         {label: t('nav.about'), href: '#about'},
@@ -18,11 +19,19 @@
     function toggleMenu() { menuOpen = !menuOpen; }
     function closeMenu() { menuOpen = false; }
 
-    $effect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            activeSection = entries.find(entry => entry.isIntersecting)?.target.id || '';}, { threshold: 1 });
-        document.querySelectorAll('section[id]').forEach(el => observer.observe(el));
-        return () => observer.disconnect();
+    onMount(() => {
+        const sections = document.querySelectorAll('section[id]');
+        const onScroll = () => {
+            let current = '';
+            sections.forEach((s) => {
+                if (scrollY >= (s as HTMLElement).offsetTop - 200) {
+                    current = s.getAttribute('id') || '';
+                }
+            });
+            activeSection = current;
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
     });
 </script>
 

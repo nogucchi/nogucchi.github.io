@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Hero } from "$lib/components";
+    import { Hero, About, Projects } from "$lib/components";
 </script>
 
 <svelte:head>
@@ -7,6 +7,8 @@
     <meta name="description" content="Portfólio de Noguti — UI/UX Designer e Front-End Developer. Criando experiências digitais com propósito." />
 </svelte:head>
 
-<main class="w-full flex flex-col">
+<main class="w-full flex flex-col gap-8">
     <Hero />
+    <About />
+    <Projects />
 </main>

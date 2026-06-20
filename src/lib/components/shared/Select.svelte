@@ -8,14 +8,14 @@
         label: string;
     }
 
-    type Props = {
+    type SelectProps = {
         options: SelectOption<T>[];
         value: T;
         onchange: (value: T) => void;
         class?: string;
     };
 
-    let { options, value, onchange, class: className }: Props = $props();
+    let { options, value, onchange, class: className }: SelectProps = $props();
 
     let open = $state(false);
 </script>

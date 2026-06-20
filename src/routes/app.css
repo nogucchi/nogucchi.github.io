@@ -7,6 +7,7 @@
     }
     html {
         @apply font-sans;
+        scroll-behavior: smooth;
     }
 }
 
@@ -15,10 +16,11 @@
     --color-foreground: oklch(21% 0.006 285.885);
     --color-surface: oklch(96.7% 0.001 286.375);
     --color-surface-hover: oklch(92% 0.004 286.32);
-    --color-surface-foreground: oklch(14.1% 0.005 285.823);
+    --color-surface-foreground: oklch(37% 0.013 285.805);
     --color-primary: oklch(0.8986 0.2331 127.46);
+    --color-primary-hover: oklch(0.821 0.212 127.392);
     --color-primary-foreground: oklch(21% 0.006 285.885);
-    --color-muted: oklch(55.2% 0.016 285.938);
+    --color-muted: oklch(70.5% 0.015 286.067);
     --color-muted-foreground: oklch(0.556 0 0);
     --color-inverse: oklch(14.1% 0.005 285.823);
     --color-inverse-foreground: oklch(92% 0.004 286.32);
@@ -30,6 +32,7 @@
 
     --color-radius: 0.625rem;
 
+    --font-sans: "Inter", sans-serif;
     --font-display: "Inter", sans-serif;
     --font-body: "Inter", sans-serif;
     --font-mono: "JetBrains Mono", monospace;

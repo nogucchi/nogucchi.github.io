@@ -10,21 +10,24 @@
         {label: t('nav.projects'), href: '#projects'},
         {label: t('nav.process'), href: '#process'},
         {label: t('nav.contact'), href: '#contact'},
-        {label: "Playground", href: "/playground"}
     ]);
 
     let menuOpen = $state(false);
+    let activeSection = $state('');
 
-    function toggleMenu() {
-        menuOpen = !menuOpen;
-    }
-    function closeMenu() {
-        menuOpen = false;
-    }
+    function toggleMenu() { menuOpen = !menuOpen; }
+    function closeMenu() { menuOpen = false; }
+
+    $effect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            activeSection = entries.find(entry => entry.isIntersecting)?.target.id || '';}, { threshold: 1 });
+        document.querySelectorAll('section[id]').forEach(el => observer.observe(el));
+        return () => observer.disconnect();
+    });
 </script>
 
 <header class="flex items-center justify-center sticky top-0 left-0 w-full h-16 z-50 backdrop-blur-md bg-background border-b border-border">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container-layout px-3">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container-layout px-4 lg:px-8">
         <a href="/" class="flex items-center gap-2 ">
             <span class="font-display font-black text-2xl tracking-[0.15em]">noguti</span>
             <span class="w-1.5 h-1.5 bg-primary rounded-sm"></span>
@@ -32,12 +35,20 @@
 
         <nav class="col-span-2 hidden md:flex items-center justify-center">
             {#each navItems as item}
-                <Button href={item.href} variant="ghost" size="sm" class="lowercase">{item.label}</Button>
+                <Button
+                    href={item.href}
+                    variant="ghost"
+                    size="sm"
+                    class="lowercase {activeSection === item.href.slice(1) ? 'text-foreground' : 'text-muted'}"
+                >{item.label}</Button>
             {/each}
         </nav>
 
         <div class="flex items-center justify-end gap-2">
-            <span class="hidden md:inline-block"><ToggleThemeBtn/></span>
+            <div class="hidden md:flex md:items-center md:gap-2 ">
+                <Button href="/playground" variant="outline" class="uppercase text-xs">Playground</Button>
+                <ToggleThemeBtn />
+            </div>
             <LanguageSelect/>
             <span class="md:hidden">
                 <Button onclick={toggleMenu} variant="outline" size="icon-sm" aria-label="Toggle menu">
@@ -58,8 +69,9 @@
                 </Button>
             {/each}
         </nav>
-        <div class="pt-4 border-t border-border">
+        <div class="flex items-center gap-2 pt-4 border-t border-border">
             <ToggleThemeBtn />
+            <Button href="/playground" variant="outline" class="uppercase text-xs" onclick={closeMenu}>Playground</Button>
         </div>
     </div>
 {/if}

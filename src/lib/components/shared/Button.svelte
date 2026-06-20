@@ -12,11 +12,11 @@
                 default: "bg-inverse text-inverse-foreground hover:bg-inverse/70",
                 outline: "border border-border bg-surface text-foreground hover:bg-surface-hover",
                 ghost: "text-muted hover:text-foreground",
-                primary: "bg-primary text-primary-foreground hover:bg-primary/70",
+                primary: "bg-primary text-primary-foreground hover:bg-primary-hover",
             },
             size: {
-                sm: "h-9 rounded-md px-3 gap-1.5 has-[data-icon=inline-end]:pr-1 has-[data-icon=inline-start]:pl-1",
-                default: "h-10 px-3 py-3 gap-1.5 has-[data-icon=inline-end]:pr-2 has-[data-icon=inline-start]:pl-2",
+                sm: "h-9 rounded-md px-3 gap-1.5 has-[svg:first-child]:pl-2 has-[svg:last-child]:pr-2",
+                default: "h-10 px-4 gap-2 has-[svg:first-child]:pl-2 has-[svg:last-child]:pr-2",
                 lg: "h-11 rounded-md px-4 gap-2 text-md",
                 icon: "w-10 h-10",
                 "icon-sm": "w-9 h-9",
@@ -29,28 +29,40 @@
         }
     })
 
-    export type ButtonVariant = VariantProps<typeof buttonVariants>["variant"];
-    export type ButtonSize = VariantProps<typeof buttonVariants>["size"];
+    export type buttonVariant = VariantProps<typeof buttonVariants>["variant"];
+    export type buttonSize = VariantProps<typeof buttonVariants>["size"];
 
     export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
         WithElementRef<HTMLAnchorAttributes> & {
-            variant?: ButtonVariant;
-            size?: ButtonSize;
+            variant?: buttonVariant;
+            size?: buttonSize;
             class?: string;
             children?: Snippet;
+            leading?: Snippet;
+            trailing?: Snippet;
         };
 </script>
 
 <script lang="ts">
-    let { variant, size, href, class: className, children, ref = null, ...restProps }: ButtonProps = $props();
+    let { variant, size, href, class: className, children, leading, trailing, ref = null, ...restProps }: ButtonProps = $props();
 </script>
+
+{#snippet content()}
+    {#if leading}
+        <span data-icon="inline-start">{@render leading()}</span>
+    {/if}
+    {@render children?.()}
+    {#if trailing}
+        <span data-icon="inline-end">{@render trailing()}</span>
+    {/if}
+{/snippet}
 
 {#if href}
     <a bind:this={ref} {href} class={cn(buttonVariants({ variant, size }), className)} {...restProps}>
-        {@render children?.()}
+        {@render content()}
     </a>
 {:else}
     <button bind:this={ref} class={cn(buttonVariants({ variant, size }), className)} {...restProps}>
-        {@render children?.()}
+        {@render content()}
     </button>
 {/if}

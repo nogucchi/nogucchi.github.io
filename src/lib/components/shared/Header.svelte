@@ -8,8 +8,7 @@
 
     const navItems = $derived([
         {label: t('nav.about'), href: '#about'},
-        {label: t('nav.projects'), href: '#projects'},
-        {label: t('nav.process'), href: '#process'},
+        // {label: t('nav.projects'), href: '#projects'},
         {label: t('nav.contact'), href: '#contact'},
     ]);
 
@@ -48,14 +47,14 @@
                     href={item.href}
                     variant="ghost"
                     size="sm"
-                    class="lowercase {activeSection === item.href.slice(1) ? 'text-foreground' : 'text-muted'}"
+                    class="lowercase {activeSection === item.href.slice(1) ? 'text-foreground' : 'text-muted-foreground'}"
                 >{item.label}</Button>
             {/each}
         </nav>
 
         <div class="flex items-center justify-end gap-2">
             <div class="hidden md:flex md:items-center md:gap-2 ">
-                <Button href="/playground" variant="outline" class="uppercase text-xs">Playground</Button>
+                <Button hidden href="/playground" variant="outline" class="uppercase text-xs">Playground</Button>
                 <ToggleThemeBtn />
             </div>
             <LanguageSelect/>
@@ -73,7 +72,7 @@
     <div class="fixed inset-0 top-16 z-40 bg-background border-t border-border flex flex-col p-6 gap-6 md:hidden">
         <nav class="flex flex-col gap-1">
             {#each navItems as item}
-                <Button href={item.href} variant="ghost" size="lg" class="p-0 lowercase justify-start text-lg" onclick={closeMenu}>
+                <Button href={item.href} variant="ghost" size="lg" class="p-0 lowercase justify-start text-lg text-muted-foreground" onclick={closeMenu}>
                     {item.label}
                 </Button>
             {/each}

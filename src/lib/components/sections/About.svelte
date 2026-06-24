@@ -29,7 +29,7 @@
 <section id="about" class="py-10 lg:py-24">
     <div class="flex flex-col gap-4 container-layout">
         <SectionTitle number="01" title={t('about.title')} />
-        <div class="grid gap-12 md:grid-cols-2 mx-8 my-4">
+        <div class="grid gap-12 md:grid-cols-2 mx-8">
             <div use:reveal class="flex flex-col gap-5">
                 <p class="text-[17px] leading-[1.75] text-foreground max-w-lg">
                     {@html t('about.bio1')}

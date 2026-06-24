@@ -10,6 +10,6 @@
 <main class="w-full flex flex-col">
     <Hero />
     <About />
-    <Projects />
+<!--    <Projects />-->
     <Contact />
 </main>

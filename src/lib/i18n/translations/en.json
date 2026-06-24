@@ -16,7 +16,9 @@
     "bio1": "I'm a <strong class=\"text-foreground-accent font-medium\">UI/UX Designer and Front-End Developer</strong> with a passion for building interfaces that connect aesthetics and functionality. I believe good design is invisible — it guides the user effortlessly."
   },
   "contact": {
-    "title": "Get in touch",
+    "title": "Contact",
+    "cta": "Lets talk!",
+    "text": "Have a project in mind or want to talk about design and technology? I’m always open to new collaborations and challenges.",
     "email": "Send email"
   }
 }

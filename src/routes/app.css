@@ -26,7 +26,7 @@
     --color-inverse-foreground: oklch(92% 0.004 286.32);
     --color-inverse-foreground-accent: oklch(98.5% 0 0);
     --color-inverse-foreground-neutral: oklch(70.5% 0.015 286.067);
-    --color-inverse-foreground-muted: oklch(44.2% 0.017 285.786);
+    --color-inverse-foreground-muted: oklch(70.5% 0.015 286.067);
     --color-border: oklch(92% 0.004 286.32);
     --color-border-inverse: oklch(27.4% 0.006 286.033);
 

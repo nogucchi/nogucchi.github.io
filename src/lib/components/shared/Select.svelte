@@ -31,7 +31,7 @@
                 <button
                     onclick={() => { onchange(opt.value); open = false; }}
                     class={cn(
-                        "px-3 py-3 text-xs font-medium tracking-wider text-muted hover:bg-surface-hover transition-colors",
+                        "px-3 py-3 text-xs font-medium tracking-wider text-muted-foreground hover:bg-surface-hover transition-colors",
                         value === opt.value && "text-accent font-bold dark:text-primary"
                     )}
                 >

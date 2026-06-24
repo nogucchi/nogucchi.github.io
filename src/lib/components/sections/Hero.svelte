@@ -3,6 +3,7 @@
     import { Button } from "$lib/components/index";
     import { GithubIcon, LinkedinIcon, InstagramIcon } from "$lib/icons";
     import { mode } from 'mode-watcher';
+    import MariposaPng from "$lib/assets/mariposas.png"
 
 </script>
 
@@ -32,7 +33,9 @@
             <InstagramIcon />
             Art by @piratezyte
         </Button>
-        <img src="/mariposas.png" alt="hero" class="w-full h-full scale-200 lg:scale-110 object-cover opacity-0 animate-fade-in-late"/>
+        <picture>
+            <img src={MariposaPng} alt="hero" class="w-full h-full scale-200 lg:scale-110 opacity-0 object-cover animate-fade-in-late" />
+        </picture>
         <div class="absolute inset-0 pointer-events-none flex items-end justify-end p-3">
             <span class="text-muted/20 font-display font-black text-xs select-none tracking-widest">© noguti & piratezyte</span>
         </div>

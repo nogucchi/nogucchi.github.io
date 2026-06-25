@@ -3,7 +3,7 @@
     import { Button } from "$lib/components/index";
     import { GithubIcon, LinkedinIcon, InstagramIcon } from "$lib/icons";
     import { mode } from 'mode-watcher';
-    import MariposaPng from "$lib/assets/mariposas.png"
+    import MariposaPng from "$lib/assets/images/mariposas.png"
 
 </script>
 

@@ -21,8 +21,14 @@
 
     const stats = [
         { label: "HCI", description: "Human Computer Interaction" },
-        { label: "HCI", description: "Human Computer Interaction" },
-        { label: "HCI", description: "Human Computer Interaction" },
+        { label: "HCD", description: "Human Centered Design" },
+        { label: "CODE", description: "Front-end development" },
+    ]
+
+    const petImages = [
+        { name: "Maru", src: "src/lib/assets/images/maru.jpg" },
+        { name: "Niro", src: "src/lib/assets/images/niro.jpg" },
+        { name: "Morgana", src: "src/lib/assets/images/morgana.jpg" },
     ]
 </script>
 
@@ -31,10 +37,11 @@
         <SectionTitle number="01" title={t('about.title')} />
         <div class="grid gap-12 md:grid-cols-2 mx-8">
             <div use:reveal class="flex flex-col gap-5">
-                <p class="text-[17px] leading-[1.75] text-foreground max-w-lg">
+                <p class="text-default leading-[1.75] text-foreground max-w-lg">
                     {@html t('about.bio1')}
                 </p>
-                <p class="text-[17px] leading-[1.75] text-foreground max-w-lg">
+                <p class="font-bold">{t('about.bio2_title')}</p>
+                <p class="text-default leading-[1.75] text-foreground max-w-lg">
                     {@html t('about.bio2')}
                 </p>
                 <div class="grid grid-cols-2 gap-4">
@@ -44,12 +51,27 @@
                 </div>
 
             </div>
-            <div use:reveal class="flex flex-col gap-4 md:max-w-lg">
-                <h3 class="uppercase font-bold text-xs text-muted-foreground">Toolkit</h3>
-                <div class="flex flex-wrap gap-2">
-                    {#each skills as skill}
-                        <Chip variant={skill.variant} size="sm" label={skill.label}/>
-                    {/each}
+            <div use:reveal class="flex flex-col gap-8 md:max-w-lg">
+                <div class="flex flex-col gap-4">
+                    <h3 class="uppercase font-bold text-xs text-muted-foreground">Toolkit</h3>
+                    <div class="flex flex-wrap gap-2">
+                        {#each skills as skill}
+                            <Chip variant={skill.variant} size="sm" label={skill.label}/>
+                        {/each}
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="uppercase font-bold text-xs text-muted-foreground">Cats :)</h3>
+                    <div class="flex flex-row gap-2">
+                        {#each petImages as petImage}
+                            <div class="group flex-1 aspect-2/3 transition-all duration-200 lg:hover:-translate-y-0.5">
+                                <div class="relative w-full h-full border border-primary lg:border-border rounded-lg overflow-hidden transition-colors duration-200 lg:group-hover:border-primary">
+                                    <img src={petImage.src} alt="{t('about.catPhotoAlt')}: {petImage.name}" class="w-full h-full object-cover transition-all duration-200 lg:hover:scale-105 lg:grayscale lg:group-hover:filter-none" />
+                                    <div class="absolute px-2 bottom-0 lg:-bottom-6 w-full h-fit font-mono transition-all duration-200 bg-primary lg:group-hover:bottom-0 text-primary-foreground">{petImage.name}</div>
+                                </div>
+                            </div>
+                        {/each}
+                    </div>
                 </div>
             </div>
         </div>

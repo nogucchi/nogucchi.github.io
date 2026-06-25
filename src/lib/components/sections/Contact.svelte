@@ -17,7 +17,7 @@
 
 <section id="contact" class=" py-10 lg:py-24 {mode.current === 'dark' ? 'bg-transparent' : 'bg-inverse'}">
     <div class="flex flex-col gap-4 container-layout  mb-2">
-        <SectionTitle number="03" title={t('contact.title')} inverseBg={mode.current === 'light'} />
+        <SectionTitle number="02" title={t('contact.title')} inverseBg={mode.current === 'light'} />
         <div class="flex flex-col gap-6 mx-8 lg:grid lg:grid-cols-2">
             <div use:reveal class="flex flex-col gap-8">
                 <p class="font-body text-inverse-foreground-muted">{t('contact.text')}</p>

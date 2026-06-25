@@ -13,13 +13,15 @@
   },
   "about": {
     "title": "About Me",
-    "bio1": "I'm a <strong class=\"text-foreground-accent font-medium\">UI/UX Designer and Front-End Developer</strong> with a passion for building interfaces that connect aesthetics and functionality. I believe good design is invisible — it guides the user effortlessly.",
-    "bio2": "Second paragraph about me — edit in src/lib/i18n/translations/en.json"
+    "bio1": "<strong class=\"text-foreground-accent font-medium\">UI/UX Designer and Front-End Developer</strong> with a passion for building interfaces that connect aesthetics and functionality. I believe good design is invisible — it guides the user effortlessly.",
+    "bio2_title": "Who am I when I'm not designing interfaces??",
+    "bio2": "I am a cisgender LGBTQIA+ woman and mostly use she/her pronouns, but I really don't mind if you use any other. :)\n\nI love playing all kinds of games, from tabletop RPGs to the fateful League of Legends.\n\nI also love animals because I've always lived with them, especially cats!",
+    "catPhotoAlt": "Photo of my cat"
   },
   "contact": {
     "title": "Contact",
     "cta": "Lets talk!",
-    "text": "Have a project in mind or want to talk about design and technology? I’m always open to new collaborations and challenges.",
+    "text": "Have a project in mind or want to talk about design and technology, or even cats and game? I’m always open to have a nice chat!",
     "email": "Send email"
   }
 }

@@ -13,13 +13,15 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "bio1": "Sou uma <strong class=\"text-foreground-accent font-medium\">UI/UX Designer e Front-End Developer</strong> com paixão por criar interfaces que conectam estética e funcionalidade. Acredito que bom design é invisível — ele guia o usuário sem esforço.",
-    "bio2": "Segundo parágrafo sobre mim — edite em src/lib/i18n/translations/pt-br.json"
+    "bio1": "<strong class=\"text-foreground-accent font-medium\">UI/UX Designer e Front-End Developer</strong> com paixão por criar interfaces que conectam estética e funcionalidade. Acredito que bom design sempre guia seu usuário sem esforço.",
+    "bio2_title": "Quem sou eu quando não estou desenhando interfaces?",
+    "bio2": "Sou uma mulher cisgênero LGBTQIA+ e uso principalmente ela/dela como pronomes, mas não me incomodo se usar qualquer outro. :)\n\nGosto muito de jogar vários tipos de jogos, desde RPGs de mesa até o fatídico League of Legends.\n\nTambém amo animais porque sempre convivi com eles, principalmente gatos!",
+    "catPhotoAlt": "Foto do meu ou minha gato(a)"
   },
   "contact": {
     "title": "Contato",
     "cta": "Vamos conversar",
-    "text": "Tem um projeto em mente ou quer conversar sobre design e tecnologia? Estou sempre aberta a novas colaborações e desafios.",
+    "text": "Tem um projeto em mente ou quer conversar sobre design e tecnologia, ou até mesmo gatos e jogos? Estou sempre disponível para uma boa conversa!",
     "email": "Enviar email"
   }
 }

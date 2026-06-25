@@ -5,6 +5,7 @@
     import LanguageSelect from "$lib/components/shared/LanguageSelect.svelte";
     import { MenuIcon, XIcon } from "$lib/icons/index";
     import { onMount } from "svelte";
+    import LogoSvg from '$lib/assets/favicon.svg'
 
     const navItems = $derived([
         {label: t('nav.about'), href: '#about'},
@@ -36,9 +37,9 @@
 
 <header class="flex items-center justify-center sticky top-0 left-0 w-full h-16 z-50 backdrop-blur-md bg-background border-b border-border">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container-layout px-4 lg:px-8">
-        <a href="/" class="flex items-center gap-2 ">
+        <a href="/" class="flex items-center gap-2 w-fit">
+            <img src={LogoSvg} alt="logo" class="w-6 h-6" />
             <span class="font-display font-black text-2xl tracking-[0.15em]">noguti</span>
-            <span class="w-1.5 h-1.5 bg-primary rounded-sm"></span>
         </a>
 
         <nav class="col-span-2 hidden md:flex items-center justify-center">

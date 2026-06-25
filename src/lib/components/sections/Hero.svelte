@@ -31,7 +31,7 @@
     <div class="relative w-full h-full opacity-0 border {mode.current === 'dark' ? 'bg-background' : 'bg-inverse'} border-border overflow-hidden animate-fade-in">
         <Button href="https://www.instagram.com/piratezyte/" target="_blank" size="sm" variant="primary" class="absolute bottom-4 left-4 opacity-80 rounded-none z-10">
             <InstagramIcon />
-            Art by @piratezyte
+            {t('hero.artBy')} @piratezyte
         </Button>
         <picture>
             <img src={MariposaPng} alt="hero" class="w-full h-full scale-200 lg:scale-110 opacity-0 object-cover animate-fade-in-late" />

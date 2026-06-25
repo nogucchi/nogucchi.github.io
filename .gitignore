@@ -1,4 +1,8 @@
 node_modules
+.idea
+.claude
+CLAUDE.md
+.vscode
 
 # Output
 .output

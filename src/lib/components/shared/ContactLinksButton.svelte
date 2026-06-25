@@ -1,13 +1,13 @@
 <script lang="ts">
 import {mode} from "mode-watcher";
 
-type ProjectCardProps = {
+type ContactLinksButtonProps = {
     href: string;
     handle: string;
     label: string;
 }
 
-let { href, handle, label }: ProjectCardProps = $props();
+let { href, handle, label }: ContactLinksButtonProps = $props();
 </script>
 
 <a {href} target="_blank" rel="noopener noreferrer" class="group relative flex justify-between items-center text-inverse-foreground-accent py-4 pl-3 pr-5 lg:px-5 border-b border-border-inverse no-underline transition-all duration-300 hover:pl-7">

@@ -2,92 +2,118 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer base {
-    body {
-        @apply bg-background text-foreground;
-    }
-    html {
-        @apply font-sans;
-        scroll-behavior: smooth;
-    }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
 }
 
 @theme {
-    --color-background: oklch(98.5% 0 0);
-    --color-foreground: oklch(21% 0.006 285.885);
-    --color-surface: oklch(96.7% 0.001 286.375);
-    --color-surface-hover: oklch(92% 0.004 286.32);
-    --color-surface-foreground: oklch(37% 0.013 285.805);
-    --color-primary: oklch(0.8986 0.2331 127.46);
-    --color-primary-hover: oklch(0.821 0.212 127.392);
-    --color-primary-foreground: oklch(21% 0.006 285.885);
-    --color-muted: oklch(96.7% 0.001 286.375);
-    --color-muted-foreground: oklch(0.556 0 0);
-    --color-inverse: oklch(14.1% 0.005 285.823);
-    --color-inverse-foreground: oklch(92% 0.004 286.32);
-    --color-inverse-foreground-accent: oklch(98.5% 0 0);
-    --color-inverse-foreground-neutral: oklch(70.5% 0.015 286.067);
-    --color-inverse-foreground-muted: oklch(70.5% 0.015 286.067);
-    --color-border: oklch(92% 0.004 286.32);
-    --color-border-inverse: oklch(27.4% 0.006 286.033);
+  --color-background: oklch(98.5% 0 0);
+  --color-foreground: oklch(21% 0.006 285.885);
+  --color-surface: oklch(96.7% 0.001 286.375);
+  --color-surface-hover: oklch(92% 0.004 286.32);
+  --color-surface-foreground: oklch(37% 0.013 285.805);
+  --color-primary: oklch(0.8986 0.2331 127.46);
+  --color-primary-hover: oklch(0.821 0.212 127.392);
+  --color-primary-foreground: oklch(21% 0.006 285.885);
+  --color-muted: oklch(96.7% 0.001 286.375);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-inverse: oklch(14.1% 0.005 285.823);
+  --color-inverse-foreground: oklch(92% 0.004 286.32);
+  --color-inverse-foreground-accent: oklch(98.5% 0 0);
+  --color-inverse-foreground-neutral: oklch(70.5% 0.015 286.067);
+  --color-inverse-foreground-muted: oklch(70.5% 0.015 286.067);
+  --color-border: oklch(92% 0.004 286.32);
+  --color-border-inverse: oklch(27.4% 0.006 286.033);
 
-    --color-radius: 0.625rem;
+  --color-radius: 0.625rem;
 
-    --font-sans: "Inter", sans-serif;
-    --font-display: "Inter", sans-serif;
-    --font-body: "Inter", sans-serif;
-    --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
-    --animate-slide-up: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    --animate-fade-in: fadeIn 1s 0.6s ease forwards;
-    --animate-fade-in-late: fadeIn 1s 1.2s ease forwards;
-    --animate-stripe-in: stripeIn 0.6s 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    --animate-bounce-slow: bounceSlow 2s 2s ease infinite;
-    --animate-pulse-dot: pulseDot 2s ease infinite;
+  --animate-slide-up: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fadeIn 1s 0.6s ease forwards;
+  --animate-fade-in-late: fadeIn 1s 1.2s ease forwards;
+  --animate-stripe-in: stripeIn 0.6s 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-bounce-slow: bounceSlow 2s 2s ease infinite;
+  --animate-pulse-dot: pulseDot 2s ease infinite;
 }
 
 .dark {
-    --color-background: oklch(0.145 0 0);
-    --color-foreground: oklch(0.985 0 0);
-    --color-surface: oklch(0.205 0 0);
-    --color-surface-hover: oklch(27.4% 0.006 286.033);
-    --color-surface-subtle: oklch(87.1% 0.006 286.286);
-    --color-surface-foreground: oklch(0.985 0 0);
-    --color-primary: oklch(0.8986 0.2331 127.46);
-    --color-primary-foreground: oklch(21% 0.006 285.885);
-    --color-muted: oklch(70.5% 0.015 286.067);
-    --color-muted-foreground: oklch(0.708 0 0);
-    --color-border: oklch(1 0 0 / 10%);
-    --color-inverse: oklch(0.985 0 0);
-    --color-inverse-foreground: oklch(14.1% 0.005 285.823);
+  --color-background: oklch(0.145 0 0);
+  --color-foreground: oklch(0.985 0 0);
+  --color-surface: oklch(0.205 0 0);
+  --color-surface-hover: oklch(27.4% 0.006 286.033);
+  --color-surface-subtle: oklch(87.1% 0.006 286.286);
+  --color-surface-foreground: oklch(0.985 0 0);
+  --color-primary: oklch(0.8986 0.2331 127.46);
+  --color-primary-foreground: oklch(21% 0.006 285.885);
+  --color-muted: oklch(70.5% 0.015 286.067);
+  --color-muted-foreground: oklch(0.708 0 0);
+  --color-border: oklch(1 0 0 / 10%);
+  --color-inverse: oklch(0.985 0 0);
+  --color-inverse-foreground: oklch(14.1% 0.005 285.823);
 }
 
 @keyframes slideUp {
-    from { transform: translateY(100%); opacity: 0; }
-    to   { transform: translateY(0);    opacity: 1; }
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes stripeIn {
-    from { transform: scaleX(0); }
-    to   { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes bounceSlow {
-    0%, 100% { transform: translateY(0); }
-    50%       { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes pulseDot {
-    0%, 100% { opacity: 1;   transform: scale(1); }
-    50%       { opacity: 0.4; transform: scale(0.8); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
 }
 
 @utility container-layout {
-    width: 100%;
-    max-width: 80rem; /* max-w-7xl */
-    margin-inline: auto;
+  width: 100%;
+  max-width: 80rem; /* max-w-7xl */
+  margin-inline: auto;
 }

@@ -13,7 +13,8 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "bio1": "Sou uma <strong class=\"text-foreground-accent font-medium\">UI/UX Designer e Front-End Developer</strong> com paixão por criar interfaces que conectam estética e funcionalidade. Acredito que bom design é invisível — ele guia o usuário sem esforço."
+    "bio1": "Sou uma <strong class=\"text-foreground-accent font-medium\">UI/UX Designer e Front-End Developer</strong> com paixão por criar interfaces que conectam estética e funcionalidade. Acredito que bom design é invisível — ele guia o usuário sem esforço.",
+    "bio2": "Segundo parágrafo sobre mim — edite em src/lib/i18n/translations/pt-br.json"
   },
   "contact": {
     "title": "Contato",

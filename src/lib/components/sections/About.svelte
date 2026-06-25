@@ -35,7 +35,7 @@
                     {@html t('about.bio1')}
                 </p>
                 <p class="text-[17px] leading-[1.75] text-foreground max-w-lg">
-                    {@html t('about.bio1')}
+                    {@html t('about.bio2')}
                 </p>
                 <div class="grid grid-cols-2 gap-4">
                     {#each stats as stat}

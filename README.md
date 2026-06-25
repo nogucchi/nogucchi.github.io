@@ -1,42 +1,42 @@
-# sv
+# Bem vindo ao repo do meu portfólio!
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Esse é meu portfólio pessoal como UI/UX Designer e Desenvolvedora Front-End. Uma single-page application com informações sobre, olha só, eu! Objetivo desse portfólio é mostrar um pouco o que faço e para outras pessoas me conhecerem também!
 
-## Creating a project
+## Stack
 
-If you're seeing this, you've probably already done this step. Congrats!
+| Tecnologia                                            | Uso                                |
+| ----------------------------------------------------- | ---------------------------------- |
+| [SvelteKit 2](https://svelte.dev/docs/kit) + Svelte 5 | Framework principal (SSG/SPA)      |
+| TypeScript                                            | Tipagem estática em todo o projeto |
+| Tailwind CSS v4                                       | Estilização via utilitários        |
+| tailwind-variants                                     | Variantes de componentes           |
+| mode-watcher                                          | Tema claro/escuro                  |
 
-```sh
-# create a new project
-npx sv create my-app
+## Funcionalidades
+
+- **Tema claro/escuro** — alternância persistida no sistema operacional
+- **Internacionalização** — PT-BR e EN, com solução própria sem dependências externas
+- **Animações** — fade-in ao entrar na viewport com IntersectionObserver e outras em cards para deixar o site mais vivo :)!
+- **Design responsivo** — layout adaptado para mobile, tablet e desktop
+
+## Estrutura
+
+```
+src/
+├── lib/
+│   ├── actions/        # use:reveal, use:clickOutside
+│   ├── components/
+│   │   ├── sections/   # Hero, About, Projects, Contact
+│   │   └── shared/     # Button, Chip, Select, SectionTitle, Header...
+│   ├── i18n/           # t(key) + translations/en.json, pt-br.json
+│   └── icons/          # Re-exports de @iconify-svelte/lucide e mdi
+└── routes/
+    ├── app.css         # Tokens de design (@theme), dark mode, animações
+    └── +page.svelte    # Página principal — une as 4 seções
 ```
 
-To recreate this project with the same configuration:
+## Contato
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- GitHub: [nogucchi](https://github.com/nogucchi)
+- LinkedIn: [mariana-noguti](https://www.linkedin.com/in/mariana-noguti/)
+- Email: [mahnoguti@gmail.com](mailto:mahnoguti@gmail.com)

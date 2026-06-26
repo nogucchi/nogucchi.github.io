@@ -9,19 +9,24 @@
   "hero": {
     "greeting": "Olá, eu sou a Mariana",
     "role": "Designer UI/UX · Dev Front-end",
-    "artBy": "Arte por"
+    "artBy": "Arte por",
+    "illustrationAlt": "Ilustração realista em preto e branco de uma mariposa com asas abertas, vista de frente, com detalhes finos nas asas e antenas. Arte por @piratezyte"
   },
   "about": {
     "title": "Sobre Mim",
     "bio1": "<strong class=\"text-foreground-accent font-medium\">UI/UX Designer e Front-End Developer</strong> com paixão por criar interfaces que conectam estética e funcionalidade. Acredito que bom design sempre guia seu usuário sem esforço.",
     "bio2_title": "Quem sou eu quando não estou desenhando interfaces?",
     "bio2": "Sou uma mulher cisgênero LGBTQIA+ e uso principalmente ela/dela como pronomes, mas não me incomodo se usar qualquer outro. :)\n\nGosto muito de jogar vários tipos de jogos, desde RPGs de mesa até o fatídico League of Legends.\n\nTambém amo animais porque sempre convivi com eles, principalmente gatos!",
-    "catPhotoAlt": "Foto do meu ou minha gato(a)"
+    "cats": {
+      "maru": "Maru, gato mesclado listrado de barriga branca, sentado em uma cadeira de escritório preta com expressão séria",
+      "niro": "Niro, gato persa de pelo longo cinza e branco, descansando tranquilamente em uma prateleira de madeira",
+      "morgana": "Morgana, gata preta com olhos amarelo-esverdeados brilhantes, curiosa dentro de uma caixa de papelão"
+    }
   },
   "contact": {
     "title": "Contato",
     "cta": "Vamos conversar",
-    "text": "Tem um projeto em mente ou quer conversar sobre design e tecnologia, ou até mesmo gatos e jogos? Estou sempre disponível para uma boa conversa!",
+    "text": "Tem um projeto em mente, quer conversar sobre design e tecnologia, ou até mesmo gatos e jogos? Estou sempre disponível para uma boa conversa!",
     "email": "Enviar email"
   }
 }

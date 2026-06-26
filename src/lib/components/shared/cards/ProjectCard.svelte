@@ -50,9 +50,10 @@
 
 {#if previewVisible && previewSrc}
     <div
+        aria-hidden="true"
         class="fixed z-50 pointer-events-none rounded-lg overflow-hidden shadow-2xl border border-border"
         style="left: {previewX}px; top: {previewY}px; width: 280px; height: 180px;"
     >
-        <img src={previewSrc} alt={name} class="w-full h-full object-cover" />
+        <img src={previewSrc} alt="" class="w-full h-full object-cover" />
     </div>
 {/if}

@@ -9,19 +9,24 @@
   "hero": {
     "greeting": "Hi, I'm Mariana",
     "role": "UI/UX Designer  ·  Front-end Dev",
-    "artBy": "Art by"
+    "artBy": "Art by",
+    "illustrationAlt": "Realistic black and white illustration of a moth with wings spread open, seen from the front, with fine details on the wings and antennae. Art by @piratezyte"
   },
   "about": {
     "title": "About Me",
     "bio1": "<strong class=\"text-foreground-accent font-medium\">UI/UX Designer and Front-End Developer</strong> with a passion for building interfaces that connect aesthetics and functionality. I believe good design is invisible — it guides the user effortlessly.",
     "bio2_title": "Who am I when I'm not designing interfaces??",
     "bio2": "I am a cisgender LGBTQIA+ woman and mostly use she/her pronouns, but I really don't mind if you use any other. :)\n\nI love playing all kinds of games, from tabletop RPGs to the fateful League of Legends.\n\nI also love animals because I've always lived with them, especially cats!",
-    "catPhotoAlt": "Photo of my cat"
+    "cats": {
+      "maru": "Maru, a striped tabby cat with a white belly, sitting on a black office chair with a serious expression",
+      "niro": "Niro, a fluffy long-haired gray and white Persian cat, resting calmly on a wooden shelf",
+      "morgana": "Morgana, a black cat with bright yellow-green eyes, curiously sitting inside a cardboard box"
+    }
   },
   "contact": {
     "title": "Contact",
     "cta": "Lets talk!",
-    "text": "Have a project in mind or want to talk about design and technology, or even cats and game? I’m always open to have a nice chat!",
+    "text": "Have a project in mind, want to talk about design and technology, or even cats and game? I’m always open to have a nice chat!",
     "email": "Send email"
   }
 }

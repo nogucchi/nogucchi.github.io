@@ -12,12 +12,17 @@ const translations: Record<Locale, TranslationDict> = {
 
 let locale = $state<Locale>("pt-br");
 
+const langMap: Record<Locale, string> = { en: "en", "pt-br": "pt-BR" };
+
 export const language = {
   get current(): Locale {
     return locale;
   },
   set(l: Locale) {
     locale = l;
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = langMap[l];
+    }
   },
 };
 

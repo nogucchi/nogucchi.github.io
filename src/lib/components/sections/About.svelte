@@ -8,15 +8,18 @@
 
     const skills: { label: string; variant: ChipVariant }[] = [
         { label: "Svelte", variant: "primary" },
+        { label: "Typescript", variant: "primary" },
         { label: "React", variant: "primary" },
+        { label: "Next.js", variant: "outline" },
+        { label: "Node.js", variant: "outline" },
         { label: "Tailwind CSS", variant: "outline" },
-        { label: "Framer", variant: "outline" },
+        { label: "Accessibility", variant: "outline" },
         { label: "Design Systems", variant: "outline" },
         { label: "HTML/CSS", variant: "outline" },
         { label: "JavaScript", variant: "outline" },
         { label: "User Research", variant: "outline" },
-        { label: "Accessibility", variant: "outline" },
         { label: "Prototyping", variant: "outline" },
+        { label: "Framer", variant: "outline" },
     ]
 
     const stats = [

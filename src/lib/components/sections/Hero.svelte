@@ -7,7 +7,7 @@
 
 </script>
 
-<div class="h-[calc(100svh-4rem)] flex flex-col gap-4 container-layout p-4 lg:p-8">
+<section aria-label="Hero" class="h-[calc(100svh-4rem)] flex flex-col gap-4 container-layout p-4 lg:p-8">
     <div class="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
         <div class="flex flex-col gap-4 md:flex-row md:items-end">
             <div class="flex flex-col gap-2">
@@ -20,11 +20,11 @@
         </div>
 
         <div class="flex flex-row gap-1 opacity-0 animate-fade-in">
-            <Button href="https://github.com/nogucchi" target="_blank" size="icon-lg" variant={mode.current === "dark" ? 'outline' : 'default'}>
-                <GithubIcon />
+            <Button href="https://github.com/nogucchi" target="_blank" aria-label="GitHub (opens in new tab)" size="icon-lg" variant={mode.current === "dark" ? 'outline' : 'default'}>
+                <GithubIcon aria-hidden="true" />
             </Button>
-            <Button href="https://www.linkedin.com/in/mariana-noguti/" target="_blank" size="icon-lg" variant={mode.current === "dark" ? 'outline' : 'default'}>
-                <LinkedinIcon />
+            <Button href="https://www.linkedin.com/in/mariana-noguti/" target="_blank" aria-label="LinkedIn (opens in new tab)" size="icon-lg" variant={mode.current === "dark" ? 'outline' : 'default'}>
+                <LinkedinIcon aria-hidden="true" />
             </Button>
         </div>
     </div>
@@ -34,7 +34,7 @@
             {t('hero.artBy')} @piratezyte
         </Button>
         <picture>
-            <img src={MariposaPng} alt="hero" class="w-full h-full scale-200 lg:scale-110 opacity-0 object-cover animate-fade-in-late" />
+            <img src={MariposaPng} alt="Ilustração de mariposas por @piratezyte" class="w-full h-full scale-200 lg:scale-110 opacity-0 object-cover animate-fade-in-late" />
         </picture>
         <div class="absolute inset-0 pointer-events-none flex items-end justify-end p-3">
             <span class="text-muted/20 font-display font-black text-xs select-none tracking-widest">© noguti & piratezyte</span>
@@ -45,4 +45,4 @@
              ondragstart={(e) => e.preventDefault()}>
         </div>
     </div>
-</div>
+</section>

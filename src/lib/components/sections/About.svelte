@@ -60,11 +60,11 @@
             <div use:reveal class="flex flex-col gap-8 md:max-w-lg">
                 <div class="flex flex-col gap-4">
                     <h3 class="uppercase font-bold text-xs text-muted-foreground">Toolkit</h3>
-                    <div class="flex flex-wrap gap-2">
+                    <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
                         {#each skills as skill}
-                            <Chip variant={skill.variant} size="sm" label={skill.label}/>
+                            <li><Chip variant={skill.variant} size="sm" label={skill.label}/></li>
                         {/each}
-                    </div>
+                    </ul>
                 </div>
                 <div class="flex flex-col gap-4">
                     <h3 class="uppercase font-bold text-xs text-muted-foreground">Cats :)</h3>

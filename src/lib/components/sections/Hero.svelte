@@ -34,7 +34,7 @@
             {t('hero.artBy')} @piratezyte
         </Button>
         <picture>
-            <img src={MariposaPng} alt="Ilustração de mariposas por @piratezyte" class="w-full h-full scale-200 lg:scale-110 opacity-0 object-cover animate-fade-in-late" />
+            <img src={MariposaPng} alt={t('hero.illustrationAlt')} class="w-full h-full scale-200 lg:scale-110 opacity-0 object-cover animate-fade-in-late" />
         </picture>
         <div class="absolute inset-0 pointer-events-none flex items-end justify-end p-3">
             <span class="text-muted/20 font-display font-black text-xs select-none tracking-widest">© noguti & piratezyte</span>

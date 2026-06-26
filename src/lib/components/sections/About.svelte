@@ -32,9 +32,9 @@
     ]
 
     const petImages = [
-        { name: "Maru", src: maruImg },
-        { name: "Niro", src: niroImg },
-        { name: "Morgana", src: morganaImg },
+        { name: "Maru", src: maruImg, altKey: "about.cats.maru" as const },
+        { name: "Niro", src: niroImg, altKey: "about.cats.niro" as const },
+        { name: "Morgana", src: morganaImg, altKey: "about.cats.morgana" as const },
     ]
 </script>
 
@@ -72,7 +72,7 @@
                         {#each petImages as petImage}
                             <div class="group flex-1 aspect-2/3 transition-all duration-200 lg:hover:-translate-y-0.5">
                                 <div class="relative w-full h-full border border-primary lg:border-border rounded-lg overflow-hidden transition-colors duration-200 lg:group-hover:border-primary">
-                                    <img src={petImage.src} alt="{t('about.catPhotoAlt')}: {petImage.name}" class="w-full h-full object-cover transition-all duration-200 lg:hover:scale-105 lg:grayscale lg:group-hover:filter-none" />
+                                    <img src={petImage.src} alt={t(petImage.altKey)} class="w-full h-full object-cover transition-all duration-200 lg:hover:scale-105 lg:grayscale lg:group-hover:filter-none" />
                                     <div class="absolute px-2 bottom-0 lg:-bottom-6 w-full h-fit font-mono transition-all duration-200 bg-primary lg:group-hover:bottom-0 text-primary-foreground">{petImage.name}</div>
                                 </div>
                             </div>

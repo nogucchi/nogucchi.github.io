@@ -5,6 +5,9 @@
     import type { ChipVariant } from "$lib/components/shared/Chip.svelte";
     import { reveal } from "$lib/actions/reveal";
     import StatsCard from "$lib/components/shared/cards/StatsCard.svelte";
+    import maruImg from "$lib/assets/images/maru.jpg";
+    import niroImg from "$lib/assets/images/niro.jpg";
+    import morganaImg from "$lib/assets/images/morgana.jpg";
 
     const skills: { label: string; variant: ChipVariant }[] = [
         { label: "Svelte", variant: "primary" },
@@ -29,9 +32,9 @@
     ]
 
     const petImages = [
-        { name: "Maru", src: "src/lib/assets/images/maru.jpg" },
-        { name: "Niro", src: "src/lib/assets/images/niro.jpg" },
-        { name: "Morgana", src: "src/lib/assets/images/morgana.jpg" },
+        { name: "Maru", src: maruImg },
+        { name: "Niro", src: niroImg },
+        { name: "Morgana", src: morganaImg },
     ]
 </script>
 

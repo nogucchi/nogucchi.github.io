@@ -1,3 +1,4 @@
+(check out [README.en](README.en.md) for english read me)
 # Bem vindo ao repo do meu portfólio!
 
 Esse é meu portfólio pessoal como UI/UX Designer e Desenvolvedora Front-End. Uma single-page application com informações sobre, olha só, eu! Objetivo desse portfólio é mostrar um pouco o que faço e para outras pessoas me conhecerem também!

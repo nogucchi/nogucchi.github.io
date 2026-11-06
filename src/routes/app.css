@@ -30,12 +30,17 @@
   --color-border: oklch(92% 0.004 286.32);
   --color-border-inverse: oklch(27.4% 0.006 286.033);
 
+  /* Fundo fixo da imagem do hero (igual nos modos claro e escuro) */
+  --color-media: oklch(0.145 0 0);
+  --color-media-border: oklch(87.1% 0.006 286.286);
+
   --color-radius: 0.625rem;
 
   --font-sans: "Inter", sans-serif;
   --font-display: "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+  --font-label: "Fira Sans", sans-serif;
 
   --animate-slide-up: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-fade-in: fadeIn 1s 0.6s ease forwards;
@@ -59,6 +64,7 @@
   --color-border: oklch(1 0 0 / 10%);
   --color-inverse: oklch(0.985 0 0);
   --color-inverse-foreground: oklch(14.1% 0.005 285.823);
+  --color-media-border: oklch(1 0 0 / 10%);
 }
 
 @keyframes slideUp {
